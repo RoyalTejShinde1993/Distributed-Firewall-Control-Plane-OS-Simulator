@@ -1,10 +1,16 @@
-
 #include "audit_logger.hpp"
+#include "../util/logger.hpp"
+
 #include <iostream>
 
 using namespace fwos;
 
-void AuditLogger::log(const Flow& flow, bool allowed) {
+void AuditLogger::log(
+    const Flow& flow,
+    bool allowed) {
+
+    std::lock_guard<std::mutex>
+        lock(globalLogMutex);
 
     std::cout
         << "[AUDIT] "
@@ -12,6 +18,6 @@ void AuditLogger::log(const Flow& flow, bool allowed) {
         << " -> "
         << flow.dstIp
         << " "
-        << (allowed ? "ALLOW":"DENY")
-        << "\n";
+        << (allowed ? "ALLOW" : "DENY")
+        << std::endl;
 }

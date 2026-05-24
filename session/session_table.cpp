@@ -1,17 +1,30 @@
-
 #include "session_table.hpp"
+#include "../util/logger.hpp"
+
 #include <iostream>
 
 using namespace fwos;
 
-void SessionTable::track(const Flow& flow) {
+void SessionTable::track(
+    const Flow& flow) {
 
-    std::string key = flow.srcIp + flow.dstIp;
+    static std::mutex sessionMutex;
+
+    std::lock_guard<std::mutex>
+        sessionLock(sessionMutex);
+
+    std::string key =
+        flow.srcIp + flow.dstIp;
 
     sessions[key]++;
 
-    std::cout
-        << "[SESSION] active="
-        << sessions.size()
-        << "\n";
+    {
+        std::lock_guard<std::mutex>
+            logLock(globalLogMutex);
+
+        std::cout
+            << "[SESSION] active="
+            << sessions.size()
+            << std::endl;
+    }
 }

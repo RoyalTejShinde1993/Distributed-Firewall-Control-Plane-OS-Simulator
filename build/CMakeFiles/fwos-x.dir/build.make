@@ -97,52 +97,38 @@ CMakeFiles/fwos-x.dir/core/control_plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/core/control_plane.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/core/control_plane.cpp -o CMakeFiles/fwos-x.dir/core/control_plane.cpp.s
 
-CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o: CMakeFiles/fwos-x.dir/flags.make
-CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/policy_engine.cpp
-CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o -MF CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o.d -o CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/policy_engine.cpp
+CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o: CMakeFiles/fwos-x.dir/flags.make
+CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/cluster/cluster_manager.cpp
+CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o -MF CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o.d -o CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/cluster/cluster_manager.cpp
 
-CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/policy_engine.cpp > CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.i
+CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/cluster/cluster_manager.cpp > CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.i
 
-CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/policy_engine.cpp -o CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.s
+CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/cluster/cluster_manager.cpp -o CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.s
 
-CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o: CMakeFiles/fwos-x.dir/flags.make
-CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/cluster_manager.cpp
-CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o -MF CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o.d -o CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/cluster_manager.cpp
+CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o: CMakeFiles/fwos-x.dir/flags.make
+CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/policy/policy_engine.cpp
+CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o -MF CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o.d -o CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/policy/policy_engine.cpp
 
-CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/cluster_manager.cpp > CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.i
+CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/policy/policy_engine.cpp > CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.i
 
-CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/cluster_manager.cpp -o CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.s
-
-CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o: CMakeFiles/fwos-x.dir/flags.make
-CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/distributed_policy.cpp
-CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o -MF CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o.d -o CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/distributed_policy.cpp
-
-CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/distributed_policy.cpp > CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.i
-
-CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/distributed_policy.cpp -o CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.s
+CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/policy/policy_engine.cpp -o CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.s
 
 CMakeFiles/fwos-x.dir/session/session_table.cpp.o: CMakeFiles/fwos-x.dir/flags.make
 CMakeFiles/fwos-x.dir/session/session_table.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/session/session_table.cpp
 CMakeFiles/fwos-x.dir/session/session_table.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/fwos-x.dir/session/session_table.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fwos-x.dir/session/session_table.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/session/session_table.cpp.o -MF CMakeFiles/fwos-x.dir/session/session_table.cpp.o.d -o CMakeFiles/fwos-x.dir/session/session_table.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/session/session_table.cpp
 
 CMakeFiles/fwos-x.dir/session/session_table.cpp.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/fwos-x.dir/session/session_table.cpp.s: cmake_force
 CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o: CMakeFiles/fwos-x.dir/flags.make
 CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/worker/thread_pool.cpp
 CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o -MF CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o.d -o CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/worker/thread_pool.cpp
 
 CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.s: cmake_force
 CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o: CMakeFiles/fwos-x.dir/flags.make
 CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/audit/audit_logger.cpp
 CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o -MF CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o.d -o CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/audit/audit_logger.cpp
 
 CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.i: cmake_force
@@ -181,31 +167,61 @@ CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/audit/audit_logger.cpp -o CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.s
 
+CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o: CMakeFiles/fwos-x.dir/flags.make
+CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/telemetry/metrics.cpp
+CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o -MF CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o.d -o CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/telemetry/metrics.cpp
+
+CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/telemetry/metrics.cpp > CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.i
+
+CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/telemetry/metrics.cpp -o CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.s
+
+CMakeFiles/fwos-x.dir/util/logger.cpp.o: CMakeFiles/fwos-x.dir/flags.make
+CMakeFiles/fwos-x.dir/util/logger.cpp.o: /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/util/logger.cpp
+CMakeFiles/fwos-x.dir/util/logger.cpp.o: CMakeFiles/fwos-x.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/fwos-x.dir/util/logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fwos-x.dir/util/logger.cpp.o -MF CMakeFiles/fwos-x.dir/util/logger.cpp.o.d -o CMakeFiles/fwos-x.dir/util/logger.cpp.o -c /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/util/logger.cpp
+
+CMakeFiles/fwos-x.dir/util/logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fwos-x.dir/util/logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/util/logger.cpp > CMakeFiles/fwos-x.dir/util/logger.cpp.i
+
+CMakeFiles/fwos-x.dir/util/logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fwos-x.dir/util/logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/util/logger.cpp -o CMakeFiles/fwos-x.dir/util/logger.cpp.s
+
 # Object files for target fwos-x
 fwos__x_OBJECTS = \
 "CMakeFiles/fwos-x.dir/main.cpp.o" \
 "CMakeFiles/fwos-x.dir/core/control_plane.cpp.o" \
-"CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o" \
-"CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o" \
-"CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o" \
+"CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o" \
+"CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o" \
 "CMakeFiles/fwos-x.dir/session/session_table.cpp.o" \
 "CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o" \
-"CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o"
+"CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o" \
+"CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o" \
+"CMakeFiles/fwos-x.dir/util/logger.cpp.o"
 
 # External object files for target fwos-x
 fwos__x_EXTERNAL_OBJECTS =
 
 fwos-x: CMakeFiles/fwos-x.dir/main.cpp.o
 fwos-x: CMakeFiles/fwos-x.dir/core/control_plane.cpp.o
-fwos-x: CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o
-fwos-x: CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o
-fwos-x: CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o
+fwos-x: CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o
+fwos-x: CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o
 fwos-x: CMakeFiles/fwos-x.dir/session/session_table.cpp.o
 fwos-x: CMakeFiles/fwos-x.dir/worker/thread_pool.cpp.o
 fwos-x: CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.o
+fwos-x: CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o
+fwos-x: CMakeFiles/fwos-x.dir/util/logger.cpp.o
 fwos-x: CMakeFiles/fwos-x.dir/build.make
 fwos-x: CMakeFiles/fwos-x.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable fwos-x"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable fwos-x"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fwos-x.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

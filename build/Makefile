@@ -153,6 +153,30 @@ audit/audit_logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/audit/audit_logger.cpp.s
 .PHONY : audit/audit_logger.cpp.s
 
+cluster/cluster_manager.o: cluster/cluster_manager.cpp.o
+.PHONY : cluster/cluster_manager.o
+
+# target to build an object file
+cluster/cluster_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.o
+.PHONY : cluster/cluster_manager.cpp.o
+
+cluster/cluster_manager.i: cluster/cluster_manager.cpp.i
+.PHONY : cluster/cluster_manager.i
+
+# target to preprocess a source file
+cluster/cluster_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.i
+.PHONY : cluster/cluster_manager.cpp.i
+
+cluster/cluster_manager.s: cluster/cluster_manager.cpp.s
+.PHONY : cluster/cluster_manager.s
+
+# target to generate assembly for a file
+cluster/cluster_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/cluster/cluster_manager.cpp.s
+.PHONY : cluster/cluster_manager.cpp.s
+
 core/control_plane.o: core/control_plane.cpp.o
 .PHONY : core/control_plane.o
 
@@ -176,78 +200,6 @@ core/control_plane.s: core/control_plane.cpp.s
 core/control_plane.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/core/control_plane.cpp.s
 .PHONY : core/control_plane.cpp.s
-
-engine/cluster_manager.o: engine/cluster_manager.cpp.o
-.PHONY : engine/cluster_manager.o
-
-# target to build an object file
-engine/cluster_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.o
-.PHONY : engine/cluster_manager.cpp.o
-
-engine/cluster_manager.i: engine/cluster_manager.cpp.i
-.PHONY : engine/cluster_manager.i
-
-# target to preprocess a source file
-engine/cluster_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.i
-.PHONY : engine/cluster_manager.cpp.i
-
-engine/cluster_manager.s: engine/cluster_manager.cpp.s
-.PHONY : engine/cluster_manager.s
-
-# target to generate assembly for a file
-engine/cluster_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/cluster_manager.cpp.s
-.PHONY : engine/cluster_manager.cpp.s
-
-engine/distributed_policy.o: engine/distributed_policy.cpp.o
-.PHONY : engine/distributed_policy.o
-
-# target to build an object file
-engine/distributed_policy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.o
-.PHONY : engine/distributed_policy.cpp.o
-
-engine/distributed_policy.i: engine/distributed_policy.cpp.i
-.PHONY : engine/distributed_policy.i
-
-# target to preprocess a source file
-engine/distributed_policy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.i
-.PHONY : engine/distributed_policy.cpp.i
-
-engine/distributed_policy.s: engine/distributed_policy.cpp.s
-.PHONY : engine/distributed_policy.s
-
-# target to generate assembly for a file
-engine/distributed_policy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/distributed_policy.cpp.s
-.PHONY : engine/distributed_policy.cpp.s
-
-engine/policy_engine.o: engine/policy_engine.cpp.o
-.PHONY : engine/policy_engine.o
-
-# target to build an object file
-engine/policy_engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o
-.PHONY : engine/policy_engine.cpp.o
-
-engine/policy_engine.i: engine/policy_engine.cpp.i
-.PHONY : engine/policy_engine.i
-
-# target to preprocess a source file
-engine/policy_engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.i
-.PHONY : engine/policy_engine.cpp.i
-
-engine/policy_engine.s: engine/policy_engine.cpp.s
-.PHONY : engine/policy_engine.s
-
-# target to generate assembly for a file
-engine/policy_engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.s
-.PHONY : engine/policy_engine.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -273,6 +225,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+policy/policy_engine.o: policy/policy_engine.cpp.o
+.PHONY : policy/policy_engine.o
+
+# target to build an object file
+policy/policy_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.o
+.PHONY : policy/policy_engine.cpp.o
+
+policy/policy_engine.i: policy/policy_engine.cpp.i
+.PHONY : policy/policy_engine.i
+
+# target to preprocess a source file
+policy/policy_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.i
+.PHONY : policy/policy_engine.cpp.i
+
+policy/policy_engine.s: policy/policy_engine.cpp.s
+.PHONY : policy/policy_engine.s
+
+# target to generate assembly for a file
+policy/policy_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/policy/policy_engine.cpp.s
+.PHONY : policy/policy_engine.cpp.s
+
 session/session_table.o: session/session_table.cpp.o
 .PHONY : session/session_table.o
 
@@ -296,6 +272,54 @@ session/session_table.s: session/session_table.cpp.s
 session/session_table.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/session/session_table.cpp.s
 .PHONY : session/session_table.cpp.s
+
+telemetry/metrics.o: telemetry/metrics.cpp.o
+.PHONY : telemetry/metrics.o
+
+# target to build an object file
+telemetry/metrics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.o
+.PHONY : telemetry/metrics.cpp.o
+
+telemetry/metrics.i: telemetry/metrics.cpp.i
+.PHONY : telemetry/metrics.i
+
+# target to preprocess a source file
+telemetry/metrics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.i
+.PHONY : telemetry/metrics.cpp.i
+
+telemetry/metrics.s: telemetry/metrics.cpp.s
+.PHONY : telemetry/metrics.s
+
+# target to generate assembly for a file
+telemetry/metrics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/telemetry/metrics.cpp.s
+.PHONY : telemetry/metrics.cpp.s
+
+util/logger.o: util/logger.cpp.o
+.PHONY : util/logger.o
+
+# target to build an object file
+util/logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/util/logger.cpp.o
+.PHONY : util/logger.cpp.o
+
+util/logger.i: util/logger.cpp.i
+.PHONY : util/logger.i
+
+# target to preprocess a source file
+util/logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/util/logger.cpp.i
+.PHONY : util/logger.cpp.i
+
+util/logger.s: util/logger.cpp.s
+.PHONY : util/logger.s
+
+# target to generate assembly for a file
+util/logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwos-x.dir/build.make CMakeFiles/fwos-x.dir/util/logger.cpp.s
+.PHONY : util/logger.cpp.s
 
 worker/thread_pool.o: worker/thread_pool.cpp.o
 .PHONY : worker/thread_pool.o
@@ -333,24 +357,27 @@ help:
 	@echo "... audit/audit_logger.o"
 	@echo "... audit/audit_logger.i"
 	@echo "... audit/audit_logger.s"
+	@echo "... cluster/cluster_manager.o"
+	@echo "... cluster/cluster_manager.i"
+	@echo "... cluster/cluster_manager.s"
 	@echo "... core/control_plane.o"
 	@echo "... core/control_plane.i"
 	@echo "... core/control_plane.s"
-	@echo "... engine/cluster_manager.o"
-	@echo "... engine/cluster_manager.i"
-	@echo "... engine/cluster_manager.s"
-	@echo "... engine/distributed_policy.o"
-	@echo "... engine/distributed_policy.i"
-	@echo "... engine/distributed_policy.s"
-	@echo "... engine/policy_engine.o"
-	@echo "... engine/policy_engine.i"
-	@echo "... engine/policy_engine.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... policy/policy_engine.o"
+	@echo "... policy/policy_engine.i"
+	@echo "... policy/policy_engine.s"
 	@echo "... session/session_table.o"
 	@echo "... session/session_table.i"
 	@echo "... session/session_table.s"
+	@echo "... telemetry/metrics.o"
+	@echo "... telemetry/metrics.i"
+	@echo "... telemetry/metrics.s"
+	@echo "... util/logger.o"
+	@echo "... util/logger.i"
+	@echo "... util/logger.s"
 	@echo "... worker/thread_pool.o"
 	@echo "... worker/thread_pool.i"
 	@echo "... worker/thread_pool.s"
