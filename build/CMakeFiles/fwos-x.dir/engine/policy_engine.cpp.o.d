@@ -1,7 +1,7 @@
 CMakeFiles/fwos-x.dir/engine/policy_engine.cpp.o: \
  /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/policy_engine.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/include/policy_engine.h \
+ /workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/engine/policy_engine.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
