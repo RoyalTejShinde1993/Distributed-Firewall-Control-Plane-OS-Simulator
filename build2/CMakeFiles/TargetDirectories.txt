@@ -1,3 +1,0 @@
-/mnt/data/fwproj/Distributed-Firewall-Control-Plane-OS-main/build2/CMakeFiles/fwos-x.dir
-/mnt/data/fwproj/Distributed-Firewall-Control-Plane-OS-main/build2/CMakeFiles/edit_cache.dir
-/mnt/data/fwproj/Distributed-Firewall-Control-Plane-OS-main/build2/CMakeFiles/rebuild_cache.dir
