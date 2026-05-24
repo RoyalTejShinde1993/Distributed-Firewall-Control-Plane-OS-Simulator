@@ -1,0 +1,3 @@
+/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles/fwos-x.dir
+/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles/edit_cache.dir
+/workspaces/Distributed-Firewall-Control-Plane-OS-Simulator/build/CMakeFiles/rebuild_cache.dir
