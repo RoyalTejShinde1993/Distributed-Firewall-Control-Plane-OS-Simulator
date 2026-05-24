@@ -1,6 +1,17 @@
-#include "audit_logger.h"
+
+#include "audit_logger.hpp"
 #include <iostream>
 
-void AuditLogger::log(const std::string& msg) {
-    std::cout << "[AUDIT] " << msg << std::endl;
+using namespace fwos;
+
+void AuditLogger::log(const Flow& flow, bool allowed) {
+
+    std::cout
+        << "[AUDIT] "
+        << flow.srcIp
+        << " -> "
+        << flow.dstIp
+        << " "
+        << (allowed ? "ALLOW":"DENY")
+        << "\n";
 }

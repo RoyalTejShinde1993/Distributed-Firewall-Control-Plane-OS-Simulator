@@ -1,9 +1,17 @@
-#include "session_table.h"
 
-void SessionTable::add(std::string id, Session s) {
-    table[id] = s;
-}
+#include "session_table.hpp"
+#include <iostream>
 
-bool SessionTable::exists(std::string id) {
-    return table.find(id) != table.end();
+using namespace fwos;
+
+void SessionTable::track(const Flow& flow) {
+
+    std::string key = flow.srcIp + flow.dstIp;
+
+    sessions[key]++;
+
+    std::cout
+        << "[SESSION] active="
+        << sessions.size()
+        << "\n";
 }

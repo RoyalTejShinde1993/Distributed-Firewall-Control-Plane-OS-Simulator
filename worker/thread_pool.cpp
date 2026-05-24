@@ -1,18 +1,27 @@
-#include "thread_pool.h"
 
-ThreadPool::ThreadPool(int n) {
-    for (int i = 0; i < n; i++) {
-        workers.emplace_back([this] {
-            while (true) {
+#include "thread_pool.hpp"
+
+using namespace fwos;
+
+ThreadPool::ThreadPool(size_t count) {
+
+    for(size_t i=0;i<count;i++) {
+
+        workers.emplace_back([this]() {
+
+            while(true) {
+
                 std::function<void()> task;
 
                 {
-                    std::unique_lock<std::mutex> lock(mtx);
-                    cv.wait(lock, [&] {
-                        return !tasks.empty() || !running;
+                    std::unique_lock<std::mutex> lock(mutex_);
+
+                    cv.wait(lock,[this] {
+                        return stop || !tasks.empty();
                     });
 
-                    if (!running && tasks.empty()) return;
+                    if(stop && tasks.empty())
+                        return;
 
                     task = tasks.front();
                     tasks.pop();
@@ -25,20 +34,24 @@ ThreadPool::ThreadPool(int n) {
 }
 
 void ThreadPool::enqueue(std::function<void()> task) {
+
     {
-        std::lock_guard<std::mutex> lock(mtx);
+        std::lock_guard<std::mutex> lock(mutex_);
         tasks.push(task);
     }
+
     cv.notify_one();
 }
 
-void ThreadPool::stop() {
+ThreadPool::~ThreadPool() {
+
     {
-        std::lock_guard<std::mutex> lock(mtx);
-        running = false;
+        std::lock_guard<std::mutex> lock(mutex_);
+        stop = true;
     }
+
     cv.notify_all();
 
-    for (auto& w : workers)
-        w.join();
+    for(auto& worker : workers)
+        worker.join();
 }

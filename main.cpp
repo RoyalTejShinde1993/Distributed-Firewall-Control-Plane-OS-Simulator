@@ -1,8 +1,8 @@
-#include "control_plane.h"
+
+#include "core/control_plane.hpp"
 
 int main() {
-    ControlPlane cp;
-    cp.init();
+    fwos::ControlPlane cp;
+    cp.initialize();
     cp.run();
-    return 0;
 }

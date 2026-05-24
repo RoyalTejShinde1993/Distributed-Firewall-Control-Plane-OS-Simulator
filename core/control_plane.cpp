@@ -1,45 +1,70 @@
-#include "control_plane.h"
-#include "policy_engine.h"
-#include "distributed_policy.h"
-#include "../engine/cluster_manager.h"
-#include "../audit/audit_logger.h"
+
+#include "control_plane.hpp"
+#include "../cluster/cluster_manager.hpp"
+#include "../policy/policy_engine.hpp"
+#include "../audit/audit_logger.hpp"
+#include "../telemetry/metrics.hpp"
+#include "../session/session_table.hpp"
+#include "../worker/thread_pool.hpp"
 
 #include <iostream>
 #include <thread>
 #include <chrono>
 
-ClusterManager cluster;
-DistributedPolicy policy;
-AuditLogger audit;
+using namespace fwos;
 
-void ControlPlane::init() {
-    std::cout << "[FWOS-X] Distributed Control Plane Starting..." << std::endl;
-
-    cluster.addNode("node-1");
-    cluster.addNode("node-2");
-    cluster.addNode("node-3");
-
-    std::string leader = cluster.electLeader();
-    policy.setPolicy("BLOCK_IP", "10.0.0.1");
-
-    std::cout << "[FWOS-X] Leader: " << leader << std::endl;
+void ControlPlane::initialize() {
+    std::cout << "[FWOS] booting distributed firewall OS\n";
 }
 
 void ControlPlane::run() {
-    int i = 0;
 
-    while (true) {
-        std::string src = "10.1.1." + std::to_string(i % 255);
-        std::string dst = (i % 5 == 0) ? "10.0.0.1" : "8.8.8.8";
+    ClusterManager cluster;
+    cluster.bootstrap();
 
-        std::string block_ip = policy.getPolicy("BLOCK_IP");
+    PolicyEngine engine;
+    engine.loadDefaultRules();
 
-        bool allow = (dst != block_ip);
+    AuditLogger audit;
+    Metrics metrics;
+    SessionTable sessions;
 
-        audit.log("NODE_FLOW " + src + " -> " + dst +
-                  (allow ? " ALLOW" : " DENY"));
+    ThreadPool pool(4);
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(400));
-        i++;
+    for(int i=0;i<50;i++) {
+
+        pool.enqueue([i,&engine,&audit,&metrics,&sessions]() {
+
+            Flow flow;
+            flow.srcIp = "10.1.1." + std::to_string(i);
+            flow.dstIp = (i % 7 == 0) ? "10.0.0.1" : "8.8.8.8";
+            flow.protocol = (i % 2 == 0) ? "tcp" : "udp";
+            flow.port = (i % 2 == 0) ? 443 : 53;
+
+            bool allowed = engine.evaluate(flow);
+
+            sessions.track(flow);
+
+            metrics.recordPacket(allowed);
+
+            audit.log(flow, allowed);
+
+            std::cout
+                << "[TRACE] "
+                << flow.srcIp
+                << " -> "
+                << flow.dstIp
+                << " proto=" << flow.protocol
+                << " port=" << flow.port
+                << " verdict="
+                << (allowed ? "ALLOW" : "DENY")
+                << "\n";
+
+            std::this_thread::sleep_for(std::chrono::milliseconds(40));
+        });
     }
+
+    std::this_thread::sleep_for(std::chrono::seconds(5));
+
+    metrics.printSummary();
 }
